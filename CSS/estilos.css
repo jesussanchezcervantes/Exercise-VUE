@@ -74,12 +74,23 @@
     
     }
         .pie{
-            background: #b1e693;
+            background: hsl(54, 89%, 41%);
             width:100%;  
         }
         @media all and (max-width: 1200px){
             .section{
                 flex-direction: column;
                 background: yellow;
+            }
+        }   
+        @media all and (max-width: 600px){
+            .articulos{
+                flex-direction: column;
+            }
+            .menu{
+                flex-direction: column;
+                height: auto;
+                display: flex;
+                align-items: stretch;
             }
         }     
