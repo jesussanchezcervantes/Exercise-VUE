@@ -77,3 +77,9 @@
             background: #b1e693;
             width:100%;  
         }
+        @media all and (max-width: 1200px){
+            .section{
+                flex-direction: column;
+                background: yellow;
+            }
+        }     
