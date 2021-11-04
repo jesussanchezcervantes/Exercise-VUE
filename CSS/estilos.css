@@ -4,42 +4,66 @@
     box-sizing: border-box;
     max-width: 1200px;
 }
+body{
+    font-family: serif;
+}
+a{
+    text-decoration: none;
+}
 .padre{
     display: flex;
     flex-flow: column nowrap;
 }
     .header{
-        background: #000;
+        background: url(../images/header.jpg);
+        background-position: center;
+        background-attachment:contain;
+        background-size: cover;
         display: flex;
         flex-flow: column nowrap;
     }
             .menu{
-                background: #2d4059;
                 display: flex;
                 flex-flow: row nowrap;
                 height: 100px;
                 align-items: center;
              }
                 .logo{
-                     background: #ea5455;
-                     flex: 1 1 auto;
-                     height: 30px;
+                     flex: 0 0 auto;
+                     align-content: flex-start;
                     }
                 .nav{
-                     background: #ea5455;
                      flex: 5 1 auto;
-                     height: 30px;
+                     display: flex;
+                    }
+                    .nav a{
+                        color:gray;
+                        font-size: 15px;
+                        padding:0 10px;                       
+                    }
+                    .nav a:hover{
+                        color:orangered;
                     }
                  .social{
-                    background: #ea5455;
                     flex: 1 1 auto;
-                    height: 30px;
+                    display: flex;
+                    }
+                    .social a{
+                        color:gray;
+                        font-size: 15px;
+                        padding:0 10px;
+                        letter-spacing: 2px;
+                    }
+                    .social a:hover{
+                        color: orangered;
                     }
             .texto-principal{
-                background: #f07b3f;
+                background: hsla(12, 3%, 31%, 0.178);
             }    
                 h1{
-                    background: #ffd460;
+                    text-align: center;
+                    color:orangered;
+                    opacity: 0.5;
             }    
     .section{
         background: #000;
@@ -58,6 +82,8 @@
             .navegacion{
                 background: #70a3c4;
                 flex:1 1 100%;
+                flex-wrap: wrap;
+                align-content: flex-start;
             }
         .aside{
             background: #f73f52;
