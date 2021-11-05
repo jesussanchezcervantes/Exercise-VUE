@@ -1,5 +1,4 @@
 *{
-    margin:10px;
     padding:10px;
     box-sizing: border-box;
     max-width: 1200px;
@@ -17,7 +16,6 @@ a{
     .header{
         background: url(../images/header.jpg);
         background-position: center;
-        background-attachment:contain;
         background-size: cover;
         display: flex;
         flex-flow: column nowrap;
@@ -25,46 +23,53 @@ a{
             .menu{
                 display: flex;
                 flex-flow: row nowrap;
-                height: 100px;
+                height: 200px;
                 align-items: center;
              }
-                .logo{
-                     flex: 0 0 auto;
-                     align-content: flex-start;
+                .logo img{
+                     width: 75px;
+                     vertical-align: top;
                     }
                 .nav{
-                     flex: 5 1 auto;
+                     width: 100%;
+                     flex: 4 1 auto;
                      display: flex;
+                     flex-wrap: wrap;
                     }
                     .nav a{
                         color:gray;
-                        font-size: 15px;
-                        padding:0 10px;                       
+                        font-size: 15px; 
+                        align-items:center;   
+                        flex-grow: 1;                 
                     }
                     .nav a:hover{
                         color:orangered;
                     }
                  .social{
-                    flex: 1 1 auto;
-                    display: flex;
+                    flex:1 1 0;
+                    display:flex;
                     }
                     .social a{
                         color:gray;
                         font-size: 15px;
-                        padding:0 10px;
-                        letter-spacing: 2px;
                     }
                     .social a:hover{
                         color: orangered;
                     }
             .texto-principal{
                 background: hsla(12, 3%, 31%, 0.178);
+                margin: 0px 40px 0px 40px;
+                padding: 30px;
+                
             }    
                 h1{
                     text-align: center;
                     color:orangered;
                     opacity: 0.5;
-            }    
+                    font-weight: lighter;
+                    font: size 28px;
+            } 
+/*   
     .section{
         background: #000;
         display: flex;
@@ -101,7 +106,7 @@ a{
     }
         .pie{
             background: hsl(54, 89%, 41%);
-            width:100%;  
+            width:100%;  */
         }
         @media all and (max-width: 1200px){
             .section{
@@ -118,5 +123,15 @@ a{
                 height: auto;
                 display: flex;
                 align-items: stretch;
+            }
+            .nav{
+                flex-direction: row;
+                height: auto;
+                display: flex;
+            }
+            .social{
+                flex-direction: row;
+                display: flex;
+                justify-content: space-between;
             }
         }     
