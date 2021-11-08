@@ -1,5 +1,6 @@
 *{
-    padding:10px;
+    padding:0px;
+    margin: 10px;
     box-sizing: border-box;
     max-width: 1200px;
 }
@@ -12,6 +13,9 @@ a{
 .padre{
     display: flex;
     flex-flow: column nowrap;
+}
+.intern-margin{
+    padding: 0 50px;;
 }
     .header{
         background: url(../images/header.jpg);
@@ -59,8 +63,7 @@ a{
             .texto-principal{
                 background: hsla(12, 3%, 31%, 0.178);
                 margin: 0px 40px 0px 40px;
-                padding: 30px;
-                
+                padding: 30px;  
             }    
                 h1{
                     text-align: center;
@@ -68,21 +71,49 @@ a{
                     opacity: 0.5;
                     font-weight: lighter;
                     font: size 28px;
-            } 
-/*   
+                }
     .section{
-        background: #000;
+        background: grey;
         display: flex;
     }    
         .articulos{
-            background: #4e4e6a;
-            flex: 2 1 auto;
+            background:grey;
             display: flex;
             flex-flow: row wrap;
+            flex: 2 1 auto;
         }
             .article{
-                background: #1f6cb0;
+                color: black;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 10px 10px 0 0;
+                background-color:#d4d4d4;
                 flex: 1 1 40%;
+            }
+            .article img{
+                width: 95%;
+            }
+            .article a{
+                color: black;
+                font-size: 13px;
+                padding: 10px;
+                margin: 10px 0;
+                
+            }
+            .article a:hover{
+                background-color: orangered;
+            }
+            h3{
+                color:yellow;
+                font-size: 13px;
+                padding: 10px 0;
+                margin-top: -80px;
+            }
+            h2{
+                font-size: 25px;
+                padding: 0 0 10px 0;
+                color: white;
+                background-color: salmon;
             }
             .navegacion{
                 background: #70a3c4;
@@ -91,23 +122,33 @@ a{
                 align-content: flex-start;
             }
         .aside{
-            background: #f73f52;
-            flex: 1 1 auto;
             display: flex;
-            flex-flow: column;
+            flex-wrap: wrap;
         }    
+        h4{
+            color: black;
+            padding: 10px;
+            text-align: justify;
+        }
             .publicidad{
-                background: #ffea85;
+                background-color:#afaaaa;
+                width: 100%;
             }
     .footer{
-        background: #000;
+        background: rgb(133, 131, 131);
         display: flex;
-    
+        justify-content: center;
+        margin-top: 10px;
     }
         .pie{
-            background: hsl(54, 89%, 41%);
-            width:100%;  */
+            text-align: center;
         }
+        .pie a{
+            color: black;
+            font-size: 11px;
+            padding: 0 10px;
+            letter-spacing: 2px;
+            }
         @media all and (max-width: 1200px){
             .section{
                 flex-direction: column;
@@ -118,20 +159,4 @@ a{
             .articulos{
                 flex-direction: column;
             }
-            .menu{
-                flex-direction: column;
-                height: auto;
-                display: flex;
-                align-items: stretch;
-            }
-            .nav{
-                flex-direction: row;
-                height: auto;
-                display: flex;
-            }
-            .social{
-                flex-direction: row;
-                display: flex;
-                justify-content: space-between;
-            }
-        }     
+        }
