@@ -1,6 +1,5 @@
 *{
     padding:0px;
-    margin: 10px;
     box-sizing: border-box;
     max-width: 1200px;
 }
@@ -17,9 +16,10 @@ a{
     .header{
         background: url(../images/header.jpg);
         background-position:center;
-        background-size: cover;
         display: flex;
         flex-flow: column nowrap;
+        padding: 0 20px;
+        margin-bottom: 10px;
     }
             .menu{
                 display: flex;
@@ -33,18 +33,21 @@ a{
                     }
                 .nav{
                      width: 100%;
-                     flex: 4 1 auto;
                      display: flex;
                      flex-wrap: wrap;
+                     align-items: inherit;
                     }
                     .nav a{
                         color:gray;
                         font-size: 15px; 
                         align-items:center;   
-                        flex-grow: 1;                 
+                        flex-grow: 1;               
                     }
                     .nav a:hover{
                         color:orangered;
+                    }
+                    .nav a>.fas{
+                        margin-right: 10px;
                     }
                  .social{
                     flex:1 1 0;
@@ -53,6 +56,7 @@ a{
                     .social a{
                         color:gray;
                         font-size: 15px;
+                        margin-left: 20px;
                     }
                     .social a:hover{
                         color: orangered;
@@ -78,7 +82,7 @@ a{
             background:rgb(173, 170, 170);
             display: flex;
             flex-flow: row wrap;
-            flex: 2 1 auto;
+            padding:10px;
         }
             .article{
                 color: black;
@@ -88,9 +92,14 @@ a{
                 background-color:rgb(228, 222, 222);
                 flex: 1 1 40%;
                 text-align: justify;
+                padding: 10px;
             }
-            .article img{
-                width: 95%;
+            .article-image{
+                height: 50%;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                padding: 10px;
             }
             .article a{
                 color: black;
@@ -101,17 +110,21 @@ a{
             .article a:hover{
                 background-color: orangered;
             }
-            h3{
+            .article-image span{
                 color:yellow;
                 font-size: 13px;
-                padding: 10px 0;
-                margin-top: -80px;
+            }
+            article p{
+                columns:2;
+                column-gap: 20px;
             }
             h2{
                 font-size: 25px;
-                padding: 0px 0px 10px 0px;
+                padding: 10px 5px 5px 5px;
                 color: white;
                 background-color: salmon;
+                margin: 5px 0px;
+                
             }
             .navegacion{
                 flex:1 1 100%;
