@@ -14,12 +14,9 @@ a{
     display: flex;
     flex-flow: column nowrap;
 }
-.intern-margin{
-    padding: 0 50px;;
-}
     .header{
         background: url(../images/header.jpg);
-        background-position: center;
+        background-position:center;
         background-size: cover;
         display: flex;
         flex-flow: column nowrap;
@@ -63,7 +60,8 @@ a{
             .texto-principal{
                 background: hsla(12, 3%, 31%, 0.178);
                 margin: 0px 40px 0px 40px;
-                padding: 30px;  
+                padding: 50px;  
+               
             }    
                 h1{
                     text-align: center;
@@ -73,11 +71,11 @@ a{
                     font: size 28px;
                 }
     .section{
-        background: grey;
+        background-color: rgb(173, 170, 170);
         display: flex;
     }    
         .articulos{
-            background:grey;
+            background:rgb(173, 170, 170);
             display: flex;
             flex-flow: row wrap;
             flex: 2 1 auto;
@@ -87,8 +85,9 @@ a{
                 font-size: 13px;
                 letter-spacing: 1px;
                 margin: 10px 10px 0 0;
-                background-color:#d4d4d4;
+                background-color:rgb(228, 222, 222);
                 flex: 1 1 40%;
+                text-align: justify;
             }
             .article img{
                 width: 95%;
@@ -98,7 +97,6 @@ a{
                 font-size: 13px;
                 padding: 10px;
                 margin: 10px 0;
-                
             }
             .article a:hover{
                 background-color: orangered;
@@ -111,31 +109,22 @@ a{
             }
             h2{
                 font-size: 25px;
-                padding: 0 0 10px 0;
+                padding: 0px 0px 10px 0px;
                 color: white;
                 background-color: salmon;
             }
             .navegacion{
-                background: #70a3c4;
                 flex:1 1 100%;
                 flex-wrap: wrap;
                 align-content: flex-start;
+                text-align: center;
             }
         .aside{
             display: flex;
             flex-wrap: wrap;
-        }    
-        h4{
-            color: black;
-            padding: 10px;
-            text-align: justify;
         }
-            .publicidad{
-                background-color:#afaaaa;
-                width: 100%;
-            }
     .footer{
-        background: rgb(133, 131, 131);
+        background:#d4d4d4;
         display: flex;
         justify-content: center;
         margin-top: 10px;
@@ -148,6 +137,9 @@ a{
             font-size: 11px;
             padding: 0 10px;
             letter-spacing: 2px;
+            }
+            .pie a:hover{
+                color: orangered;
             }
         @media all and (max-width: 1200px){
             .section{
