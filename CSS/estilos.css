@@ -1,10 +1,9 @@
 *{
-    padding:0px;
     box-sizing: border-box;
     max-width: 1200px;
 }
 body{
-    font-family: serif;
+    font-family: 'Red Hat Mono', monospace;
 }
 a{
     text-decoration: none;
@@ -64,22 +63,21 @@ a{
             .texto-principal{
                 background: hsla(12, 3%, 31%, 0.178);
                 margin: 0px 40px 0px 40px;
-                padding: 50px;  
-               
+                padding: 50px;     
             }    
                 h1{
                     text-align: center;
                     color:orangered;
                     opacity: 0.5;
                     font-weight: lighter;
-                    font: size 28px;
+                    font-size: 25px;
                 }
     .section{
-        background-color: rgb(173, 170, 170);
+        background-color:rgb(196, 194, 194);
         display: flex;
     }    
         .articulos{
-            background:rgb(173, 170, 170);
+            background:rgb(196, 194, 194);
             display: flex;
             flex-flow: row wrap;
             padding:10px;
@@ -87,8 +85,7 @@ a{
             .article{
                 color: black;
                 font-size: 13px;
-                letter-spacing: 1px;
-                margin: 10px 10px 0 0;
+                margin: 5px 20px 10px 0px;
                 background-color:rgb(228, 222, 222);
                 flex: 1 1 40%;
                 text-align: justify;
@@ -102,10 +99,11 @@ a{
                 padding: 10px;
             }
             .article a{
-                color: black;
+                color: red;
                 font-size: 13px;
                 padding: 10px;
                 margin: 10px 0;
+                display: flex;
             }
             .article a:hover{
                 background-color: orangered;
@@ -114,30 +112,39 @@ a{
                 color:yellow;
                 font-size: 13px;
             }
-            article p{
+            .article p{
                 columns:2;
                 column-gap: 20px;
             }
-            h2{
+            .article h2{
                 font-size: 25px;
                 padding: 10px 5px 5px 5px;
                 color: white;
                 background-color: salmon;
-                margin: 5px 0px;
-                
+                margin: 5px 0px;      
             }
             .navegacion{
                 flex:1 1 100%;
                 flex-wrap: wrap;
                 align-content: flex-start;
                 text-align: center;
+                font-size: 13px;
             }
         .aside{
-            display: flex;
-            flex-wrap: wrap;
+            padding: 20px 20px 0px 0px;
+            
         }
+            .publicidad h2{
+                color:black;
+                font-size: 15px;
+                text-align: center;
+            }
+            .publicidad p{
+                text-align: center;
+                font-size: 13px;
+            }
     .footer{
-        background:#d4d4d4;
+        background: rgb(228, 222, 222);
         display: flex;
         justify-content: center;
         margin-top: 10px;
@@ -148,8 +155,7 @@ a{
         .pie a{
             color: black;
             font-size: 11px;
-            padding: 0 10px;
-            letter-spacing: 2px;
+            padding: 0px;
             }
             .pie a:hover{
                 color: orangered;
